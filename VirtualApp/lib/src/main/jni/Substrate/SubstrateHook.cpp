@@ -924,7 +924,7 @@ static void SubstrateHookFunction(SubstrateProcessRef process, void *symbol, voi
 #endif
 
 _extern void MSHookFunction(void *symbol, void *replace, void **result) {
-     SubstrateHookFunction(NULL, symbol, replace, result);
+     //SubstrateHookFunction(NULL, symbol, replace, result);
 }
 
 #if defined(__APPLE__) && defined(__arm__)
